@@ -1,0 +1,12 @@
+# Folders
+__pycache__/
+venv/
+config/
+.img/
+
+# Files
+.DS_Store
+.env
+*.pyc
+*.cfg
+*.txt
