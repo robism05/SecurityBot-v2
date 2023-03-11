@@ -5,10 +5,13 @@ import os
 colorama.init() #initialize colorama for colored output
 cf = colorama.Fore
 
+version = "2.0.0"
+
 def menu():
     os.system('clear')
     print(cf.CYAN,artwork.ascii_art)
-    print("Original idea by rbs5, contributed by Horashi0\n\n")
+    print("By rbs5 (alias) et al")
+    print("version "+version+"\n\n")
     print("Just a silly program tbh")
 menu()
 
@@ -27,7 +30,7 @@ while True:
         choice = int(input("Enter your choice (1-%d): " % len(options)))
         if 1 <= choice <= len(options):
             if choice == 1:
-                import main.py
+                import main
             elif choice == 2:
                 print("Coming soon...")
                 break
