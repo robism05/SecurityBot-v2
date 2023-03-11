@@ -10,3 +10,4 @@ config/
 *.pyc
 *.cfg
 *.txt
+*.mp4
