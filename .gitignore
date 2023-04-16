@@ -11,3 +11,5 @@ config/
 *.cfg
 *.txt
 *.mp4
+*.wav
+*.jpg
