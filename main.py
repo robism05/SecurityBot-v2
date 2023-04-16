@@ -20,8 +20,9 @@ def menu():
 
     # define list of options
     options = ['1: Start SecBot', 
-               '2: Communicate', 
-               '3: Exit']
+               '2: Update'
+               '3: Communicate', 
+               '4: Exit']
     print(cf.YELLOW + "Please choose an option:")
     print("1: Start SecBot")
     print("2: Communicate")
