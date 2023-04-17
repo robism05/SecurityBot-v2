@@ -1,6 +1,6 @@
 # SecurityBot-v2
 
-![image](.img/image.png)
+![image](images/image.png)
 
 Enter the master directory and run:
 `
