@@ -1,6 +1,17 @@
+import os, platform
+
+current_directory = os.path.dirname(os.path.abspath(__file__))
+virtual_env = os.path.join(current_directory, "venv")
+if not os.path.exists(virtual_env):
+    print("Before you can set up you must first do these things or you might result in error!")
+    print("First create a virtual environment. \nYou can do this with the command:\n* virtualenv venv")
+    print("If you do not have this command install with: \n* pip install virtualenv (or pip3 if you use that)")
+    print("Finally, enter your virtual environment and install the requirments:")
+    print("* source venv/bin/activate")
+    print("* pip install requirments.txt")
+
 import colorama #for colored output in terminal
 from src import artwork
-import os, platform
 
 colorama.init() #initialize colorama for colored output
 cf = colorama.Fore
@@ -38,7 +49,7 @@ def menu():
                 elif choice == 2:
                     print("\nHow to updateto latest repository!")
                     print("1. Make sure you have git installed on your system.")
-                    print("2. In the main directory:\n$ git checkout\n$ git pull origin") 
+                    print("2. In the main directory:\n$ git checkout\n$ git pull origin\n") 
                     print(colorama.Style.RESET_ALL)
                 elif choice == 3:
                     print("Coming soon...")
@@ -46,6 +57,7 @@ def menu():
                 elif choice == 4:
                     exit()
             else:
+                print(colorama.Style.RESET_ALL)
                 print(cf.RED+"Invalid input, please enter a number between 1 and %d" % len(options))
         except ValueError:
             print("Invalid input, please enter a number between 1 and %d" % len(options))
