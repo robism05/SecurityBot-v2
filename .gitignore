@@ -9,7 +9,6 @@ config/
 .env
 *.pyc
 *.cfg
-*.txt
 *.mp4
 *.wav
 *.jpg
