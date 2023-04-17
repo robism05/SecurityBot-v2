@@ -5,6 +5,9 @@ import discord, os, time
 from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
+if TOKEN == None:
+    print("You will have to create a discord bot and put the token inside a .env file!")
+    exit()
 
 intents = discord.Intents.all()
 client = discord.Client(intents=intents)

@@ -4,12 +4,12 @@ current_directory = os.path.dirname(os.path.abspath(__file__))
 virtual_env = os.path.join(current_directory, "venv")
 if not os.path.exists(virtual_env):
     print("Before you can set up you must first do these things or you might result in error!")
-    print("First create a virtual environment. \nYou can do this with the command:\n* virtualenv venv")
-    print("If you do not have this command install with: \n* pip install virtualenv (or pip3 if you use that)")
+    print("First create a virtual environment. \n\nYou can do this with the command:\n* virtualenv venv\n")
+    print("If you do not have this command install with: \n* pip install virtualenv (or pip3 if you use that)\n")
     print("Finally, enter your virtual environment and install the requirments:")
     print("* source venv/bin/activate")
-    print("* pip install requirments.txt")
-
+    print("* pip install -r requirments.txt\n")
+    exit()
 import colorama #for colored output in terminal
 from src import artwork
 
