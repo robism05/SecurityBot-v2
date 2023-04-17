@@ -10,6 +10,7 @@ if not os.path.exists(virtual_env):
     print("* source venv/bin/activate")
     print("* pip install -r requirments.txt\n")
     exit()
+
 import colorama #for colored output in terminal
 from src import artwork
 
@@ -52,6 +53,7 @@ def menu():
                     print("2. In the main directory:\n$ git checkout\n$ git pull origin\n") 
                     print(colorama.Style.RESET_ALL)
                 elif choice == 3:
+                    print(colorama.Style.RESET_ALL)
                     print("Coming soon...")
                     break
                 elif choice == 4:
@@ -59,7 +61,9 @@ def menu():
             else:
                 print(colorama.Style.RESET_ALL)
                 print(cf.RED+"Invalid input, please enter a number between 1 and %d" % len(options))
+                print(colorama.Style.RESET_ALL)
         except ValueError:
+            print(colorama.Style.RESET_ALL)
             print("Invalid input, please enter a number between 1 and %d" % len(options))
 
 menu()

@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 if TOKEN == None:
+    print("Your TOKEN or .env file is corrupt/missing.")
     print("You will have to create a discord bot and put the token inside a .env file!")
     exit()
 
